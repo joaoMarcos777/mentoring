@@ -12,5 +12,95 @@
     <link rel="stylesheet" href="/style.css" />
     <title>Rate mentoring</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Rate your mentoring</h1>
+        <p>The time has come to evaluate your mentor. Let's go there?</p>
+        <img
+          src="/image/img.png"
+          alt="A speech bubble with 5 stars and 3 of them are white while the other 2 are unlit and dark
+        "
+        />
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <div class="input-wrapper-col-2">
+            <div class="input-wrapper">
+              <label for="event-name">Name</label>
+              <input type="text" id="event-name" required />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-ltsName">Last name</label>
+              <input type="text" id="event-ltsName" required />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-email"
+              >Email <span>(Enter a valid email address)</span></label
+            >
+            <input type="email" id="event-email" required />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Mentor Information</legend>
+
+            <div class="input-wrapper field-select">
+              <label for="event-mentor"> Select who was your mentor</label>
+              <select id="event-mentor">
+                <option value="joao">João</option>
+                <option value="lucas">Lucas</option>
+                <option value="pedro">Pedro</option>
+                <option value="gabriel">Gabriel</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-feedback">Feedback about the mentor </label>
+              <textarea id="event-feedback"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="event-checkbox" />
+              <label for="event-checkbox">
+                All my doubts were clarified during the mentoring.</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Scheduling next mentorship</legend>
+
+            <div class="input-wrapper-schedule">
+              <div class="input-wrapper">
+                <label for="event-date">Date <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="event-date" />
+              </div>
+
+              <div class="time-wrapper">
+                <div class="input-wrapper">
+                  <label for="event-first1">From</label>
+                  <input type="time" id="event-first1" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="event-end1">Until</label>
+                  <input type="time" id="event-end1" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </body>
 </html>
